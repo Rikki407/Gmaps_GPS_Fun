@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.darklightning.gmapsdemo.DifferentViewTypeActivivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Map"
+                android:id="@+id/btn_map"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satelite"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/btn_satellite"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hybrid"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/btn_hybrid"/>
+        </LinearLayout>
+
+        <fragment
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            map:cameraTargetLat = "28.38"
+            map:cameraTargetLng = "77.12"
+            />
+    </LinearLayout>
+
+</LinearLayout>

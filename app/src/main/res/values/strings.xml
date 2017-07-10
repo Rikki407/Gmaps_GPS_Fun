@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GmapsDemo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_fun_with_camera">Map</string>
+</resources>
